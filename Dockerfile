@@ -8,5 +8,5 @@ RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN funtoonsmultimediaofficial/Ultra-Forward-Bot
 WORKDIR /Ultra-Forward-Bot
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"] 
+COPY . /Ultra-Forward-Bot
+CMD ["python", "main.py"]
